@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Kaushan+Script&family=Nova+Mono&family=Oleo+Script+Swash+Caps&family=Orbitron&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7965e url(./pexels-vlada-karpovich-7099979.jpg);
+    background-size: 100% 100%;
+    background-blend-mode: multiply;
+}
+
+.box {
+    width: 60vw;
+    aspect-ratio: 3/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(250, 163, 156, 0.301);
+    box-shadow: 0 0px 32px 2px rgba(9, 16, 110, 0.673);
+    backdrop-filter: blur( 4.0px);
+    -webkit-backdrop-filter: blur( 8.0px);
+    border-radius: 10px;
+    border: none;
+    transition: 0.6s;
+    backdrop-filter: blur(3px) saturate(0.8);
+}
+
+.box:hover {
+    box-shadow: 0 0 32px 1px whitesmoke;
+    background: rgba(250, 162, 156, 0.3);
+    backdrop-filter: blur(6px);
+}
+
+.box .content-box{
+    width: 100%;
+    height:40%;
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:18%;
+    color: rgb(253, 255, 153);
+    font-family: 'Kaushan Script', cursive;
+    text-decoration:wavy;
+    letter-spacing: 6px;
+    word-spacing: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1),
+    -2px -2px 4px whitesmoke;
+}
+
+.box .time{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content:space-evenly;
+}
+.time .time-box{
+    height: 80%;
+    width: 20%;
+    text-align: center;
+}
+
+.time-box div,
+.time-box p{
+    font-size: 3vw;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    letter-spacing: 2.5px;
+    color: rgb(163, 255, 235);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1),
+    -1px -1px 4px whitesmoke;
+}
+.time-box  div{
+    height: 60%;
+    font-size: 6vw;
+    font-family: 'Orbitron', sans-serif;
+    padding-top: 25%;
+}
+
+#day-box p{
+    letter-spacing: 5px;
+}
